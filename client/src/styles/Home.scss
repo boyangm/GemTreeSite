@@ -1,0 +1,43 @@
+.Home{
+    @include default(100vh);
+    margin:0;
+    padding-top: 10px;
+    min-width: 100%;
+    text-align: center;
+    background-image: url('../photos/gem-tree-mums-cover-art-web@0.5x.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-color: white;
+    background-blend-mode: multiply;
+    background-position-y: top;
+
+         
+    @media only screen and (min-width: 768px){
+        background-size: 1440px;
+        // background-position: center;
+        background-image: url('../photos/coverart.JPG');
+        background-position-y: 30%;
+    }
+}
+    .title{
+        padding: 0;
+        margin-top:16%;
+        color: chocolate;
+
+    }
+     
+      
+
+.audioPlayer{
+    position: fixed;
+    bottom:0;
+    left:25%;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    
+    z-index: 3;
+    
+}

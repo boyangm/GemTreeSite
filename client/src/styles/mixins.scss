@@ -1,0 +1,5 @@
+@mixin default($height){
+    position: relative;
+    width: 100%;
+    min-height: $height;
+}

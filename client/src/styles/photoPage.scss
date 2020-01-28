@@ -1,0 +1,73 @@
+.photoCont{
+    @include default(100vh);
+    background:#b8a5b4;
+    padding: 10px;
+    .toggle{
+        position: fixed;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        top: 0;
+        width:100%;
+        left: 0;
+        height: 100vh;
+        z-index: 3;
+        opacity: 1;
+        background: rgba(173, 216, 230, 0.7);
+        transform: translateX(0);
+        transition: opacity 1s ;
+        &.not{
+         opacity: 0;
+         transform: translateX(-100%);
+
+        }
+        .photo{
+            position: relative;
+            width: 50%;
+            height: 90vh;
+            border-radius: 100%;
+
+           margin: 5% auto 0;
+
+            @media only screen and (max-width: 768px){
+                height: 75vh;
+                width: 75%;
+                margin-top: 25%;
+            }
+
+        }
+
+    }
+    .photoPage{
+        @include default(100vh);
+       
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        .galleryItem{
+            
+            width: calc(20% - 30px);
+            border-radius: 100%;
+            margin-top: 10px;
+            margin-right: 10px;
+            height: 252px;
+            transition: all 1.5s;
+            @media only screen and (max-width: 768px){
+                width: calc(33% - 20px);
+                height: 100px;
+            }
+            &.left{
+                transform: translateX(10%) rotate(50deg);
+                transition: all 1.5s;
+            }
+            &.right{
+                transform: translateX(-10%) rotate(-50deg);
+                transition: all 1.5s;
+            }
+            &:nth-child(4){
+                margin-right: 0;
+            }
+        }
+    }
+}

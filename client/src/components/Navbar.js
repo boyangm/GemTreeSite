@@ -23,7 +23,7 @@ const NavBar = () => {
         <div className = 'navBar'>
         <img onClick={handleToggle} className= 'hamburger' src={imgSrc.value}/>
             <div className = {navLinkStatus.value}>
-                <Link onClick = {handleToggle}  className = 'navLink' to= '/home'>Home</Link>
+                <a onClick = {handleToggle}  className = 'navLink' href= '#Home'>Home</a>
                 <a onClick = {handleToggle} className = 'navLink' href= "#photos">Photos</a>
                 <a onClick = {handleToggle} className = 'navLink' href= '#videos'>Videos</a>
                 <a onClick = {handleToggle} className = 'navLink' href = '#music'>Music</a>

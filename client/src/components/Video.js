@@ -2,15 +2,17 @@ import React, {useEffect, useRef} from 'react'
 
 const Video = () => {
     const videoRef = useRef('')
+    const check = window.matchMedia('(min-width: 768px)')
 
     const handleScroll = () =>{
         const point = videoRef.current.getBoundingClientRect().top
-        if(point <= 100 &&  point >= -650){
+        if(point <= 100 &&  point >= -650 && check.matches){
             videoRef.current.play()
         }else{
             videoRef.current.pause()
         }
     }
+
     useEffect(() =>{
         window.addEventListener('scroll', handleScroll)
 

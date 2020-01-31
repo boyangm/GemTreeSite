@@ -1,0 +1,44 @@
+.musicPage{
+    position: relative;
+    background-image: url('../photos/gem-tree-mums-cover-art-web@0.5x.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    background-blend-mode: multiply;
+    padding: 10px 0;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    .widgetArea{
+        position: absolute;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        top:20%;
+        left: 6%;
+        .musicLogo{
+            position:relative;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+            .logo{
+                width: 48px;
+            }
+               
+        }
+         @media only screen and (max-width: 600px){
+            top: 10%;
+            left: 10%;
+
+         }
+    }
+    @media only screen and (max-width: 600px){
+        // background-size: px;
+        // background-position: center;
+        background-image: url('../photos/coverart.JPG');
+        background-attachment: scroll;
+        background-position-y: 30%;
+        padding-bottom: 50px;
+     }
+    }

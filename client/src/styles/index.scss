@@ -8,4 +8,7 @@ body{
         height: 100%;
     
 }
-@import 'mixins', 'navbar', 'Home','photoPage'
+html {
+    scroll-behavior: smooth;
+  }
+@import 'mixins', 'navbar', 'Home','photoPage', 'Music','video', 'footer', 'socials'

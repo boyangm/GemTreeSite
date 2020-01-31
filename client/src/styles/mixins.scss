@@ -3,3 +3,9 @@
     width: 100%;
     min-height: $height;
 }
+
+$base: #b8a5b4;
+$complement: complement($base);
+$complement-light: lighten($complement, 20%);
+$mainFont: 'Nanum Myeongjo', serif;
+$font2: 'El Messiri', sans-serif;

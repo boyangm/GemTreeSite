@@ -1,0 +1,16 @@
+.videoPage{
+   position: relative;
+   display: block;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100vh;
+   
+   .screen{
+       position: relative;
+       background:#b8a5b4;
+       margin: 0;
+       max-width: 100%;
+       min-height: 100vh;
+    }
+}

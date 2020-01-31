@@ -1,0 +1,68 @@
+.footer{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background:#b8a5b4;
+    text-align: center;
+    padding-bottom: 50px;
+
+    .subTitle2{
+        color:#e3e3e3;
+        font-family: $mainFont;
+        font-size: 1.5rem;
+        letter-spacing: .8rem;
+        padding: 20px 0  ;
+        margin: 0 auto;
+        @media only screen and (max-width: 600px){
+    
+            font-size: 2.5rem;
+        letter-spacing: .8rem;
+        padding: 20px 0  ;
+    
+        }
+    }
+    .mailList{
+        position: relative;
+        color: white;
+        width: 75%;
+        margin: 0 auto;
+        font-family: $mainFont;
+        input{
+            margin: 0 10px;
+        }
+        @media only screen and (max-width: 600px){
+            display: flex;
+            flex-flow: column;
+            width: 50%;
+            label{
+                margin: 10px auto;
+            }
+        }
+        button{
+            width: 100px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 10px;
+            color: #e3e3e3;
+            font-family: $font2 ;
+            font-size: 1rem;
+            background: #87ccc2;
+            @media only screen and (max-width: 768px){
+                margin: 20px auto;
+            }
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: $font2;
+            min-width: 100%;
+            margin: 0 auto;
+        }
+    }
+            p{
+                color:white;
+                font-family: $font2;
+            }
+
+}

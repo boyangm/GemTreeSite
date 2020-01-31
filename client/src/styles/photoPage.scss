@@ -2,6 +2,10 @@
     @include default(100vh);
     background:#b8a5b4;
     padding: 10px;
+    border-top: 30px solid #87ccc2;
+    border-bottom: 30px solid #87ccc2;
+    text-align: center;
+ 
     .toggle{
         position: fixed;
         display: flex;
@@ -30,10 +34,11 @@
            margin: 5% auto 0;
 
             @media only screen and (max-width: 768px){
-                height: 75vh;
+                height: 50vh;
                 width: 75%;
                 margin-top: 25%;
             }
+          
 
         }
 
@@ -45,6 +50,9 @@
         flex-flow: row wrap;
         justify-content: space-evenly;
         margin-top: 100px;
+        @media only screen and (max-width: 600px){
+            margin-top: 25px;
+        }
         .galleryItem{
             
             width: calc(20% - 30px);
@@ -53,9 +61,13 @@
             margin-right: 10px;
             height: 252px;
             transition: all 1.5s;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 600px){
                 width: calc(33% - 20px);
                 height: 100px;
+            }
+            @media only screen and (min-width: 600px) and (max-width: 1000px){
+                width: calc(25% - 30px);
+                height: 150px;
             }
             &.left{
                 transform: translateX(10%) rotate(50deg);
@@ -69,5 +81,21 @@
                 margin-right: 0;
             }
         }
+    }
+}
+
+.subTitle{
+    color:#e3e3e3;
+    font-family: $mainFont;
+    font-size: 3.5rem;
+    letter-spacing: 1.2rem;
+    padding: 20px 0  ;
+    margin: 0 auto;
+    @media only screen and (max-width: 600px){
+
+        font-size: 2.5rem;
+    letter-spacing: .8rem;
+    padding: 20px 0  ;
+
     }
 }
